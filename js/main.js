@@ -98,8 +98,8 @@ function loadjoke(){
         }
     });
 }
-//for loading a new joke every 10 seconds
-    setInterval(loadjoke, 10000);
+//for loading a new joke every 15 seconds
+    setInterval(loadjoke, 15000);
 //for the Initial load
     loadjoke();
 });
