@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joke-API</title>
+    <link rel="shortcut icon" href="img/joke.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-4">
+                <div class="joke mt-5">
+                    <div class="card-container">
+                        <div class="card-header">
+                            <div class="img-avatar position-relative">
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-bubble  border border-light">
+                                T-<span id="type"></span>
+                                  </span>
+                                <span class="loader"></span>
+                            </div>
+                            <div class="shine">Joke-API</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="messages-container fw-bold">
+                                <div class="message-box left">
+                                    <p>Category: <span id="category"></span></p>
+                                </div>
+                                <div class="message-box right">
+                                    <p id="joke">-</p>
+                                    <p><span id="setup-txt"></span><span id="setup" ></span></p>
+                                    <p><span id="delivery-txt"></span><span id="delivery"></span></p>
+                                </div>
+                            </div>
+                            <div class="message-input">
+                                <form class="fw-bold">
+                                    <div class="button-send">
+                                        <!--for safe-->
+                                        <span id="safe" class="safe"></span>
+                                        <!--for flags-->
+                                        <span id="flag0" class="flag"></span>
+                                        <span id="flag1" class="flag"></span>
+                                        <span id="flag2" class="flag"></span>
+                                        <span id="flag3" class="flag"></span>
+                                        <span id="flag4" class="flag"></span>
+                                        <span id="flag5" class="flag"></span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="jquery/jquery-3.7.1.slim.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

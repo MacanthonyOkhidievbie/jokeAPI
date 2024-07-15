@@ -1,0 +1,175 @@
+body{
+  background-color: #212121;
+}
+.card-container {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.card-header .img-avatar {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin-right: 20px;
+  background-color: #333;
+}
+.bg-bubble{
+  background-color: #333;
+}
+.card-header .text-chat {
+  color: black;
+  margin: 0;
+  font-size: 20px;
+}
+
+.card-body {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.messages-container {
+  padding: 15px;
+}
+
+.message-box {
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
+.message-box.left {
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 13px;
+  left: 0;
+}
+
+.message-box.right {
+  background-color: #333;
+  color: #fff;
+  font-size: 13px;
+  right: 0;
+}
+
+.message-input {
+  padding: 5px;
+  border-top: 1px solid #ccc;
+}
+
+.message-input .message-send {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  resize: none;
+}
+
+.message-input .button-send {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 10px;
+  font-size: 13px;
+}
+
+.message-input .button-send:hover {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+
+.shine {
+  font-size: 2em;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.3);
+  background: #222 -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#222),
+      to(#222),
+      color-stop(0.5, #fff)
+    ) 0 0 no-repeat;
+  background-image: -webkit-linear-gradient(
+    -40deg,
+    transparent 0%,
+    transparent 40%,
+    #fff 50%,
+    transparent 60%,
+    transparent 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-background-size: 50px;
+  -webkit-animation: zezzz;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes zezzz {
+  0%,
+  10% {
+    background-position: -200px;
+  }
+  20% {
+    background-position: top left;
+  }
+  100% {
+    background-position: 200px;
+  }
+}
+
+.safe{
+  color: "";
+}
+.flag{
+  color: "";
+}
+
+.loader {
+  display: block;
+  width: 44px;
+  height: 44px;
+  position: relative;
+}
+
+.loader:before , .loader:after {
+  content: "";
+  position: absolute;
+  left: 62.5%;
+  bottom: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #FFF;
+  transform: translate(-50% , -100%)  scale(0);
+  animation: push_401 2s infinite linear;
+}
+
+.loader:after {
+  animation-delay: 1s;
+}
+
+@keyframes push_401 {
+  0% , 50% {
+    transform: translate(-50% , 0%)  scale(1)
+  }
+
+  100% {
+    transform: translate(-50%, -100%) scale(0)
+  }
+}
